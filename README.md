@@ -1,4 +1,4 @@
-# Thanacare Frontend
+# Empowered Endings Frontend
 
 A modern healthcare platform frontend built with Next.js, featuring Redux state management and dark theme support.
 

@@ -5,11 +5,11 @@
 
 @theme inline {
   /* Brand Colors */
-  --traverse-magenta: var(--traverse-magenta);
-  --infinity-pink: var(--infinity-pink);
+  --empowered-teal: var(--empowered-teal);
+  --empowered-gold: var(--empowered-gold);
   --pure-white: var(--pure-white);
-  --xiketic: var(--xiketic);
-  --space-blue: var(--space-blue);
+  --dark-navy: var(--dark-navy);
+  --light-teal: var(--light-teal);
   --slate: var(--slate);
   --stone: var(--stone);
 
@@ -56,88 +56,89 @@
 :root {
   --radius: 0.625rem;
 
-  /* Thanacare Brand Colors */
-  --traverse-magenta: #a616bd;
-  --infinity-pink: #d14398;
+  /* Empowered Endings Brand Colors */
+  --empowered-teal: #00a9b5;
+  --empowered-gold: #f5a623;
   --pure-white: #ffffff;
-  --xiketic: #1e2739;
-  --space-blue: #415376;
-  --slate: #617cae;
-  --stone: #a9b0c2;
+  --dark-navy: #1a1a1a;
+  --light-teal: #4dc4cf;
+  --slate: #6b7280;
+  --stone: #9ca3af;
 
   /* Light Theme Colors */
   --background: var(--pure-white);
-  --foreground: var(--xiketic);
+  --foreground: var(--dark-navy);
   --card: var(--pure-white);
-  --card-foreground: var(--xiketic);
+  --card-foreground: var(--dark-navy);
   --popover: var(--pure-white);
-  --popover-foreground: var(--xiketic);
-  --primary: var(--traverse-magenta);
+  --popover-foreground: var(--dark-navy);
+  --primary: var(--empowered-teal);
   --primary-foreground: var(--pure-white);
   --secondary: var(--stone);
-  --secondary-foreground: var(--xiketic);
+  --secondary-foreground: var(--dark-navy);
   --muted: #f8f9fa;
-  --muted-foreground: var(--space-blue);
-  --accent: var(--infinity-pink);
+  --muted-foreground: var(--light-teal);
+  --accent: var(--empowered-gold);
   --accent-foreground: var(--pure-white);
   --destructive: #dc2626;
   --border: var(--stone);
   --input: var(--stone);
-  --ring: var(--traverse-magenta);
-  --chart-1: var(--traverse-magenta);
-  --chart-2: var(--infinity-pink);
+  --ring: var(--empowered-teal);
+  --chart-1: var(--empowered-teal);
+  --chart-2: var(--empowered-gold);
   --chart-3: var(--slate);
-  --chart-4: var(--space-blue);
-  --chart-5: var(--xiketic);
+  --chart-4: var(--light-teal);
+  --chart-5: var(--dark-navy);
   --sidebar: #fafbfc;
-  --sidebar-foreground: var(--xiketic);
-  --sidebar-primary: var(--traverse-magenta);
+  --sidebar-foreground: var(--dark-navy);
+  --sidebar-primary: var(--empowered-teal);
   --sidebar-primary-foreground: var(--pure-white);
-  --sidebar-accent: var(--infinity-pink);
+  --sidebar-accent: var(--empowered-gold);
   --sidebar-accent-foreground: var(--pure-white);
   --sidebar-border: var(--stone);
-  --sidebar-ring: var(--traverse-magenta);
+  --sidebar-ring: var(--empowered-teal);
 }
 
 .dark {
   /* Dark Theme Colors */
-  --background: var(--xiketic);
+  --background: var(--dark-navy);
   --foreground: var(--pure-white);
-  --card: #2a3441;
+  --card: #2d3748;
   --card-foreground: var(--pure-white);
-  --popover: #2a3441;
+  --popover: #2d3748;
   --popover-foreground: var(--pure-white);
-  --primary: var(--infinity-pink);
+  --primary: var(--empowered-gold);
   --primary-foreground: var(--pure-white);
-  --secondary: var(--space-blue);
+  --secondary: var(--light-teal);
   --secondary-foreground: var(--pure-white);
-  --muted: #3a4552;
+  --muted: #374151;
   --muted-foreground: var(--stone);
-  --accent: var(--traverse-magenta);
+  --accent: var(--empowered-teal);
   --accent-foreground: var(--pure-white);
   --destructive: #ef4444;
-  --border: var(--space-blue);
-  --input: var(--space-blue);
-  --ring: var(--infinity-pink);
-  --chart-1: var(--infinity-pink);
-  --chart-2: var(--traverse-magenta);
+  --border: var(--light-teal);
+  --input: var(--light-teal);
+  --ring: var(--empowered-gold);
+  --chart-1: var(--empowered-gold);
+  --chart-2: var(--empowered-teal);
   --chart-3: var(--slate);
-  --chart-4: var(--space-blue);
+  --chart-4: var(--light-teal);
   --chart-5: var(--stone);
-  --sidebar: #1e2739;
+  --sidebar: #1a1a1a;
   --sidebar-foreground: var(--pure-white);
-  --sidebar-primary: var(--infinity-pink);
+  --sidebar-primary: var(--empowered-gold);
   --sidebar-primary-foreground: var(--pure-white);
-  --sidebar-accent: var(--traverse-magenta);
+  --sidebar-accent: var(--empowered-teal);
   --sidebar-accent-foreground: var(--pure-white);
-  --sidebar-border: var(--space-blue);
-  --sidebar-ring: var(--infinity-pink);
+  --sidebar-border: var(--light-teal);
+  --sidebar-ring: var(--empowered-gold);
 }
 
 @layer base {
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
   }

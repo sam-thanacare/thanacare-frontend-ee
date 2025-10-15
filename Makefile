@@ -1,9 +1,9 @@
-# Thanacare Frontend - Local CI/CD Commands
+# Empowered Endings Frontend - Local CI/CD Commands
 .PHONY: help install lint lint-fix format format-check security-scan security-scan-codeql security-scan-codeql-init security-scan-full test test-ci build ci clean
 
 # Default target
 help: ## Show this help message
-	@echo "Thanacare Frontend - Local CI/CD Commands"
+	@echo "Empowered Endings Frontend - Local CI/CD Commands"
 	@echo ""
 	@echo "Available commands:"
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "  %-15s %s\n", $$1, $$2}'

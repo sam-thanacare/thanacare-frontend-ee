@@ -8,7 +8,7 @@ import { AuthInitializer } from '@/components/auth-initializer';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Thanacare',
+  title: 'Empowered Endings',
   description: 'Healthcare management platform',
   icons: {
     icon: [

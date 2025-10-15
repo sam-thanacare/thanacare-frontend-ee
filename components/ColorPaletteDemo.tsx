@@ -13,14 +13,14 @@ import { brandColors } from '@/lib/config/colors';
 export function ColorPaletteDemo() {
   const primaryColors = [
     {
-      name: 'Traverse Magenta',
-      value: brandColors.traverseMagenta,
-      class: 'bg-traverse-magenta',
+      name: 'Empowered Teal',
+      value: brandColors.empoweredTeal,
+      class: 'bg-empowered-teal',
     },
     {
-      name: 'Infinity Pink',
-      value: brandColors.infinityPink,
-      class: 'bg-infinity-pink',
+      name: 'Empowered Gold',
+      value: brandColors.empoweredGold,
+      class: 'bg-empowered-gold',
     },
     {
       name: 'Pure White',
@@ -30,11 +30,11 @@ export function ColorPaletteDemo() {
   ];
 
   const secondaryColors = [
-    { name: 'Xiketic', value: brandColors.xiketic, class: 'bg-xiketic' },
+    { name: 'Dark Navy', value: brandColors.darkNavy, class: 'bg-dark-navy' },
     {
-      name: 'Space Blue',
-      value: brandColors.spaceBlue,
-      class: 'bg-space-blue',
+      name: 'Light Teal',
+      value: brandColors.lightTeal,
+      class: 'bg-light-teal',
     },
     { name: 'Slate', value: brandColors.slate, class: 'bg-slate' },
     { name: 'Stone', value: brandColors.stone, class: 'bg-stone' },
@@ -44,10 +44,10 @@ export function ColorPaletteDemo() {
     <div className="space-y-8 p-6">
       <div>
         <h2 className="text-2xl font-bold text-foreground mb-4">
-          Thanacare Brand Colors
+          Empowered Endings Brand Colors
         </h2>
         <p className="text-muted-foreground mb-6">
-          Official color palette for the Thanacare application
+          Official color palette for the Empowered Endings application
         </p>
       </div>
 

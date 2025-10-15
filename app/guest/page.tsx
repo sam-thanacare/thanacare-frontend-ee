@@ -115,7 +115,7 @@ export default function GuestPage() {
       items: [
         {
           id: 'thanacare-legal',
-          title: 'Connect with Thanacare Legal',
+          title: 'Connect with Empowered Endings Legal',
           completed: false,
         },
         {
@@ -167,8 +167,8 @@ export default function GuestPage() {
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center space-x-4">
               <Image
-                src="/compassionate_choices.png"
-                alt="Thanacare"
+                src="/empowered-endings-logo.png"
+                alt="Empowered Endings"
                 className="h-12 w-auto object-contain"
                 width={150}
                 height={48}
@@ -193,9 +193,9 @@ export default function GuestPage() {
             Welcome!
           </h1>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-4xl mx-auto">
-            Thanacare&apos;s Healthcare Planning Platform is Your Roadmap to
-            Empowerment. Below are options you may select from to help
-            communicate your wishes regarding future care.
+            Empowered Endings&apos;s Healthcare Planning Platform is Your
+            Roadmap to Empowerment. Below are options you may select from to
+            help communicate your wishes regarding future care.
           </p>
         </div>
 
@@ -300,15 +300,15 @@ export default function GuestPage() {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center space-x-4 mb-4 md:mb-0">
               <Image
-                src="/compassionate_choices.png"
-                alt="Thanacare"
+                src="/empowered-endings-logo.png"
+                alt="Empowered Endings"
                 className="h-10 w-auto object-contain"
                 width={120}
                 height={40}
               />
             </div>
             <p className="text-gray-400 text-center md:text-right">
-              © 2025 Thanacare. Empowering healthcare for everyone.
+              © 2025 Empowered Endings. Empowering healthcare for everyone.
             </p>
           </div>
         </div>

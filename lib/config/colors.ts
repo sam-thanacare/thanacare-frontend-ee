@@ -1,33 +1,33 @@
 /**
- * Thanacare Brand Color Configuration
+ * Empowered Endings Brand Color Configuration
  * Based on the official brand color palette
  */
 
 export const brandColors = {
   // Primary Colors
-  traverseMagenta: '#A616BD',
-  infinityPink: '#D14398',
+  empoweredTeal: '#00A9B5',
+  empoweredGold: '#F5A623',
   pureWhite: '#FFFFFF',
 
   // Secondary Colors
-  xiketic: '#1E2739',
-  spaceBlue: '#415376',
-  slate: '#617CAE',
-  stone: '#A9B0C2',
+  darkNavy: '#1A1A1A',
+  lightTeal: '#4DC4CF',
+  slate: '#6B7280',
+  stone: '#9CA3AF',
 } as const;
 
 export const colorPalette = {
   // Primary brand colors
   primary: {
-    magenta: brandColors.traverseMagenta,
-    pink: brandColors.infinityPink,
+    teal: brandColors.empoweredTeal,
+    gold: brandColors.empoweredGold,
     white: brandColors.pureWhite,
   },
 
   // Secondary brand colors
   secondary: {
-    xiketic: brandColors.xiketic,
-    spaceBlue: brandColors.spaceBlue,
+    darkNavy: brandColors.darkNavy,
+    lightTeal: brandColors.lightTeal,
     slate: brandColors.slate,
     stone: brandColors.stone,
   },
@@ -37,10 +37,10 @@ export const colorPalette = {
     // Light theme
     light: {
       background: brandColors.pureWhite,
-      foreground: brandColors.xiketic,
-      primary: brandColors.traverseMagenta,
+      foreground: brandColors.darkNavy,
+      primary: brandColors.empoweredTeal,
       secondary: brandColors.stone,
-      accent: brandColors.infinityPink,
+      accent: brandColors.empoweredGold,
       muted: '#F8F9FA',
       border: brandColors.stone,
       card: brandColors.pureWhite,
@@ -48,49 +48,49 @@ export const colorPalette = {
 
     // Dark theme
     dark: {
-      background: brandColors.xiketic,
+      background: brandColors.darkNavy,
       foreground: brandColors.pureWhite,
-      primary: brandColors.infinityPink,
-      secondary: brandColors.spaceBlue,
-      accent: brandColors.traverseMagenta,
-      muted: '#3A4552',
-      border: brandColors.spaceBlue,
-      card: '#2A3441',
+      primary: brandColors.empoweredGold,
+      secondary: brandColors.lightTeal,
+      accent: brandColors.empoweredTeal,
+      muted: '#374151',
+      border: brandColors.lightTeal,
+      card: '#2D3748',
     },
   },
 } as const;
 
 // Tailwind CSS color classes
 export const tailwindColors = {
-  'traverse-magenta': brandColors.traverseMagenta,
-  'infinity-pink': brandColors.infinityPink,
+  'empowered-teal': brandColors.empoweredTeal,
+  'empowered-gold': brandColors.empoweredGold,
   'pure-white': brandColors.pureWhite,
-  xiketic: brandColors.xiketic,
-  'space-blue': brandColors.spaceBlue,
+  'dark-navy': brandColors.darkNavy,
+  'light-teal': brandColors.lightTeal,
   slate: brandColors.slate,
   stone: brandColors.stone,
 } as const;
 
 // RGB values for programmatic use
 export const colorRGB = {
-  traverseMagenta: { r: 166, g: 22, b: 189 },
-  infinityPink: { r: 209, g: 67, b: 152 },
+  empoweredTeal: { r: 0, g: 169, b: 181 },
+  empoweredGold: { r: 245, g: 166, b: 35 },
   pureWhite: { r: 255, g: 255, b: 255 },
-  xiketic: { r: 30, g: 39, b: 57 },
-  spaceBlue: { r: 65, g: 83, b: 118 },
-  slate: { r: 97, g: 124, b: 174 },
-  stone: { r: 169, g: 176, b: 194 },
+  darkNavy: { r: 26, g: 26, b: 26 },
+  lightTeal: { r: 77, g: 196, b: 207 },
+  slate: { r: 107, g: 114, b: 128 },
+  stone: { r: 156, g: 163, b: 175 },
 } as const;
 
 // CMYK values for print/design use
 export const colorCMYK = {
-  traverseMagenta: { c: 12, m: 88, y: 0, k: 26 },
-  infinityPink: { c: 0, m: 68, y: 27, k: 18 },
+  empoweredTeal: { c: 100, m: 0, y: 0, k: 29 },
+  empoweredGold: { c: 0, m: 32, y: 86, k: 4 },
   pureWhite: { c: 0, m: 0, y: 0, k: 0 },
-  xiketic: { c: 47, m: 32, y: 0, k: 78 },
-  spaceBlue: { c: 45, m: 30, y: 0, k: 54 },
-  slate: { c: 44, m: 29, y: 0, k: 32 },
-  stone: { c: 13, m: 9, y: 0, k: 24 },
+  darkNavy: { c: 0, m: 0, y: 0, k: 90 },
+  lightTeal: { c: 63, m: 0, y: 0, k: 19 },
+  slate: { c: 0, m: 0, y: 0, k: 55 },
+  stone: { c: 0, m: 0, y: 0, k: 32 },
 } as const;
 
 export type BrandColor = keyof typeof brandColors;
