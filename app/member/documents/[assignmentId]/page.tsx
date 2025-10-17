@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import { useRouter, useParams } from 'next/navigation';
 import { useAppSelector } from '@/lib/store/hooks';
+import { translateDocumentTitle } from '@/lib/utils/documentTitleTranslator';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
@@ -252,7 +253,9 @@ export default function DocumentFillPage() {
               </Button>
               <div>
                 <h1 className="text-xl font-semibold">
-                  {assignment?.document?.title || 'Loading...'}
+                  {assignment?.document?.title
+                    ? translateDocumentTitle(assignment.document.title)
+                    : 'Loading...'}
                 </h1>
                 <p className="text-xs text-muted-foreground">
                   Assigned by {assignment?.trainer?.name || 'Loading...'}

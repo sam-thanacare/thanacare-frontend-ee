@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { useAppSelector } from '@/lib/store/hooks';
+import { translateDocumentTitle } from '@/lib/utils/documentTitleTranslator';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
@@ -267,7 +268,7 @@ export function MemberDocumentsTab() {
                       <div className="flex-1">
                         <div className="flex items-center gap-3 mb-1">
                           <h3 className="font-medium">
-                            {assignment.documentTitle}
+                            {translateDocumentTitle(assignment.documentTitle)}
                           </h3>
                           {getStatusBadge(assignment.status)}
                         </div>

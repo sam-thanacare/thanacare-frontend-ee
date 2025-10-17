@@ -29,6 +29,7 @@ import {
   LogOut,
 } from 'lucide-react';
 import { useAppSelector, useAppDispatch } from '@/lib/store/hooks';
+import { translateDocumentTitle } from '@/lib/utils/documentTitleTranslator';
 import { logout } from '@/lib/store/slices/authSlice';
 
 interface Assignment {
@@ -437,7 +438,7 @@ export default function MemberDocumentsPage() {
                         <div className="flex-1">
                           <div className="flex items-center gap-3 mb-2">
                             <h3 className="text-lg font-medium text-gray-900">
-                              {assignment.documentTitle}
+                              {translateDocumentTitle(assignment.documentTitle)}
                             </h3>
                             {getStatusBadge(assignment.status)}
                           </div>

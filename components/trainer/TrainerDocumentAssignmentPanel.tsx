@@ -33,6 +33,7 @@ import { Progress } from '@/components/ui/progress';
 import { Plus, Search, FileText, Trash2 } from 'lucide-react';
 import { toast } from 'sonner';
 import { AssignmentDetailsModal } from '@/components/admin/AssignmentDetailsModal';
+import { translateDocumentTitle } from '@/lib/utils/documentTitleTranslator';
 
 interface User {
   id: string;
@@ -263,7 +264,9 @@ export function TrainerDocumentAssignmentPanel() {
     setSelectedDocument(documentId);
     const document = documents.find((d) => d.id === documentId);
     if (document) {
-      setSelectedDocumentDisplay(`${document.title} (v${document.version})`);
+      setSelectedDocumentDisplay(
+        `${translateDocumentTitle(document.title)} (v${document.version})`
+      );
     } else {
       setSelectedDocumentDisplay('');
     }
@@ -426,7 +429,7 @@ export function TrainerDocumentAssignmentPanel() {
                   <SelectContent>
                     {documents.map((doc) => (
                       <SelectItem key={doc.id} value={doc.id}>
-                        {doc.title} (v{doc.version})
+                        {translateDocumentTitle(doc.title)} (v{doc.version})
                       </SelectItem>
                     ))}
                   </SelectContent>
@@ -551,7 +554,7 @@ export function TrainerDocumentAssignmentPanel() {
                     <TableCell>
                       <div>
                         <div className="font-medium">
-                          {assignment.document.title}
+                          {translateDocumentTitle(assignment.document.title)}
                         </div>
                         <div className="text-sm text-muted-foreground">
                           v{assignment.document.version}

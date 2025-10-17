@@ -27,6 +27,7 @@ import {
   UserCheck,
 } from 'lucide-react';
 import { toast } from 'sonner';
+import { translateDocumentTitle } from '@/lib/utils/documentTitleTranslator';
 
 interface User {
   id: string;
@@ -248,7 +249,9 @@ export function AssignmentDetailsModal({
             </h3>
             <div className="bg-gray-50 rounded-lg p-4 space-y-3">
               <div>
-                <div className="font-medium">{assignment.document?.title}</div>
+                <div className="font-medium">
+                  {translateDocumentTitle(assignment.document?.title || '')}
+                </div>
                 <div className="text-sm text-muted-foreground">
                   {assignment.document?.description}
                 </div>

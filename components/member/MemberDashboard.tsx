@@ -27,6 +27,7 @@ import {
   Settings,
 } from 'lucide-react';
 import { debugLogger } from '@/lib/utils/debugLogger';
+import { translateDocumentTitle } from '@/lib/utils/documentTitleTranslator';
 
 interface Assignment {
   id: string;
@@ -436,7 +437,7 @@ export function MemberDashboard() {
                 <div className="flex-1 space-y-2">
                   <div className="flex items-center gap-3">
                     <h3 className="font-medium text-foreground">
-                      {assignment.documentTitle}
+                      {translateDocumentTitle(assignment.documentTitle)}
                     </h3>
                     {getStatusBadge(assignment.status)}
                   </div>
