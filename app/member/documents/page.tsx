@@ -531,7 +531,7 @@ export default function MemberDocumentsPage() {
                     <p className="text-gray-500 mb-4">
                       {searchTerm || statusFilter !== 'all'
                         ? 'Try adjusting your search or filter criteria.'
-                        : "You don't have any dementia tool documents assigned yet. Your trainer will assign documents when they're ready for you to complete."}
+                        : "You don't have any Empowered Endings tool documents assigned yet. Your trainer will assign documents when they're ready for you to complete."}
                     </p>
                     {(searchTerm || statusFilter !== 'all') && (
                       <Button

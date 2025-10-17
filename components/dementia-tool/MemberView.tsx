@@ -115,9 +115,12 @@ export default function MemberView() {
   return (
     <div className="max-w-4xl mx-auto p-6 space-y-6">
       <div className="text-center space-y-2">
-        <h1 className="text-3xl font-bold">My Dementia Tool Documents</h1>
+        <h1 className="text-3xl font-bold">
+          My Empowered Endings Tool Documents
+        </h1>
         <p className="text-muted-foreground">
-          View and complete your assigned dementia care planning documents
+          View and complete your assigned Empowered Endings care planning
+          documents
         </p>
       </div>
 
@@ -256,9 +259,9 @@ export default function MemberView() {
               No Documents Assigned
             </h3>
             <p className="text-gray-500 mb-4">
-              You don&apos;t have any dementia tool documents assigned yet. Your
-              trainer will assign documents when they&apos;re ready for you to
-              complete.
+              You don&apos;t have any Empowered Endings tool documents assigned
+              yet. Your trainer will assign documents when they&apos;re ready
+              for you to complete.
             </p>
             <Button variant="outline">
               <Eye className="h-4 w-4 mr-2" />

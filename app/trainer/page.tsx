@@ -281,7 +281,7 @@ export default function TrainerDashboard() {
                   </div>
                   <p className="text-xs text-muted-foreground">
                     {statsLoading
-                      ? 'Total dementia tool assignments'
+                      ? 'Total Empowered Endings tool assignments'
                       : `${stats.completedAssignments} completed, ${stats.inProgressAssignments} in progress`}
                   </p>
                 </CardContent>

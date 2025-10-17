@@ -226,7 +226,7 @@ export function MemberDocumentsTab() {
                 <span>Document Assignments</span>
               </CardTitle>
               <p className="text-sm text-muted-foreground">
-                Your assigned dementia care planning documents
+                Your assigned Empowered Endings care planning documents
               </p>
             </div>
             <Button
@@ -247,9 +247,9 @@ export function MemberDocumentsTab() {
                 No Documents Assigned
               </h3>
               <p className="text-muted-foreground">
-                You don&apos;t have any dementia tool documents assigned yet.
-                Your trainer will assign documents when they&apos;re ready for
-                you to complete.
+                You don&apos;t have any Empowered Endings tool documents
+                assigned yet. Your trainer will assign documents when
+                they&apos;re ready for you to complete.
               </p>
             </div>
           ) : (

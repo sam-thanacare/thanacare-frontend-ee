@@ -157,10 +157,11 @@ export function ModuleAssignmentPanel() {
         setDocuments([
           {
             id: document.id || 'default',
-            title: document.title || 'Dementia Values & Priorities Tool',
+            title:
+              document.title || 'Empowered Endings Values & Priorities Tool',
             description:
               document.description ||
-              'Comprehensive dementia care planning document',
+              'Comprehensive Empowered Endings care planning document',
             version: document.version || '1.0',
           },
         ]);
@@ -169,8 +170,9 @@ export function ModuleAssignmentPanel() {
         setDocuments([
           {
             id: 'default',
-            title: 'Dementia Values & Priorities Tool',
-            description: 'Comprehensive dementia care planning document',
+            title: 'Empowered Endings Values & Priorities Tool',
+            description:
+              'Comprehensive Empowered Endings care planning document',
             version: '1.0',
           },
         ]);
@@ -491,12 +493,12 @@ export function ModuleAssignmentPanel() {
         <CardHeader>
           <CardTitle className="flex items-center space-x-2">
             <Plus className="h-5 w-5" />
-            <span>Assign Dementia Tool Document</span>
+            <span>Assign Empowered Endings Tool Document</span>
           </CardTitle>
           <p className="text-sm text-muted-foreground">
-            Assign dementia values and priorities documents to members only. A
-            trainer must be selected to manage and monitor the assignment.
-            Trainers and admins cannot be assigned documents.
+            Assign Empowered Endings values and priorities documents to members
+            only. A trainer must be selected to manage and monitor the
+            assignment. Trainers and admins cannot be assigned documents.
           </p>
         </CardHeader>
         <CardContent className="space-y-6">
@@ -518,8 +520,8 @@ export function ModuleAssignmentPanel() {
                       'No trainers available to manage assignments. '}
                     {documents.length === 0 && 'No documents available. '}
                     Please create members, trainers, and documents before
-                    assigning dementia tool documents. Note: Documents can only
-                    be assigned to members.
+                    assigning Empowered Endings tool documents. Note: Documents
+                    can only be assigned to members.
                   </p>
                 </div>
               </div>
@@ -693,7 +695,7 @@ export function ModuleAssignmentPanel() {
             <span>Current Assignments</span>
           </CardTitle>
           <p className="text-sm text-muted-foreground">
-            View and manage all dementia tool document assignments
+            View and manage all Empowered Endings tool document assignments
           </p>
         </CardHeader>
         <CardContent>

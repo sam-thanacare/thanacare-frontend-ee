@@ -472,7 +472,8 @@ export function AdminDocumentAssignmentPanel() {
             Document Assignments
           </h2>
           <p className="text-muted-foreground">
-            Assign dementia tool documents to members and track their progress
+            Assign Empowered Endings tool documents to members and track their
+            progress
           </p>
         </div>
         <Dialog open={isAssignDialogOpen} onOpenChange={setIsAssignDialogOpen}>

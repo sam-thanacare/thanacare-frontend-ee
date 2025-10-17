@@ -276,7 +276,9 @@ export default function TrainerDashboard() {
     <div className="max-w-7xl mx-auto p-6 space-y-6">
       <div className="flex justify-between items-center">
         <div>
-          <h1 className="text-3xl font-bold">Dementia Tool Dashboard</h1>
+          <h1 className="text-3xl font-bold">
+            Empowered Endings Tool Dashboard
+          </h1>
           <p className="text-muted-foreground">
             Monitor member progress and manage assignments
           </p>
@@ -444,7 +446,7 @@ export default function TrainerDashboard() {
             <CardHeader>
               <CardTitle>All Assignments</CardTitle>
               <CardDescription>
-                Detailed view of all dementia tool assignments
+                Detailed view of all Empowered Endings tool assignments
               </CardDescription>
             </CardHeader>
             <CardContent>
@@ -512,9 +514,10 @@ export default function TrainerDashboard() {
         <TabsContent value="assign">
           <Card>
             <CardHeader>
-              <CardTitle>Assign Dementia Tool Document</CardTitle>
+              <CardTitle>Assign Empowered Endings Tool Document</CardTitle>
               <CardDescription>
-                Assign the Dementia Values & Priorities Tool to family members
+                Assign the Empowered Endings Values & Priorities Tool to family
+                members
               </CardDescription>
             </CardHeader>
             <CardContent>

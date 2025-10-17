@@ -70,12 +70,12 @@ export default function GuestPage() {
       id: 'document-completion',
       title: 'Document Completion',
       description:
-        'Identifying and educating a healthcare proxy Completing advance directives Making dementia-specific care plans',
+        'Identifying and educating a healthcare proxy Completing advance directives Making Empowered Endings care plans',
       icon: FileText,
       items: [
         {
           id: 'dementia-values',
-          title: 'Dementia Values & Priorities',
+          title: 'Empowered Endings Values & Priorities',
           completed: false,
           link: '/dementia-tool-demo',
         },
@@ -253,7 +253,7 @@ export default function GuestPage() {
           })}
         </div>
 
-        {/* Dementia Tool Tour Section */}
+        {/* Empowered Endings Tool Tour Section */}
         <Card className="mb-12 bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-900/20 dark:to-purple-900/20 border-blue-200 dark:border-blue-800">
           <CardContent className="pt-6">
             <div className="text-center">
@@ -262,20 +262,20 @@ export default function GuestPage() {
                   <Play className="h-8 w-8 text-blue-600 dark:text-blue-400" />
                 </div>
                 <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
-                  Take a Tour of the Dementia Tool
+                  Take a Tour of the Empowered Endings Tool
                 </h2>
               </div>
               <p className="text-gray-600 dark:text-gray-300 mb-6 max-w-2xl mx-auto">
-                Experience our comprehensive Dementia Values & Priorities tool
-                that helps you communicate your wishes for future care. This
-                interactive demo will guide you through the process step by
-                step.
+                Experience our comprehensive Empowered Endings Values &
+                Priorities tool that helps you communicate your wishes for
+                future care. This interactive demo will guide you through the
+                process step by step.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link href="/dementia-tool-demo">
                   <Button size="lg" className="w-full sm:w-auto">
                     <Play className="mr-2 h-4 w-4" />
-                    Start Dementia Tool Tour
+                    Start Empowered Endings Tool Tour
                   </Button>
                 </Link>
                 <Link href="/member-view-demo">

@@ -85,7 +85,7 @@ const SECTIONS = [
     id: 0,
     title: 'Care Preferences',
     description:
-      'Select your desired care preferences for different stages of dementia',
+      'Select your desired care preferences for different stages of health conditions',
     icon: Heart,
     color: 'text-red-500',
     fields: [
@@ -547,7 +547,7 @@ export default function DementiaValuesForm({
       const pdfBlob = await dementiaToolService.generatePDF(assignmentId);
       dementiaToolService.downloadPDF(
         pdfBlob,
-        `dementia-tool-${assignmentId}.pdf`
+        `empowered-endings-tool-${assignmentId}.pdf`
       );
       toast.success('PDF generated and downloaded successfully!');
     } catch (error) {
@@ -844,11 +844,11 @@ export default function DementiaValuesForm({
       {/* Header */}
       <div className="text-center space-y-2">
         <h1 className="text-3xl font-bold">
-          Dementia Values & Priorities Tool
+          Empowered Endings Values & Priorities Tool
         </h1>
         <p className="text-muted-foreground">
           A comprehensive tool to help communicate your wishes regarding future
-          care if living with dementia
+          care and end-of-life planning
         </p>
       </div>
 
@@ -1073,8 +1073,8 @@ export default function DementiaValuesForm({
             <div className="flex items-center gap-2 text-green-700">
               <CheckCircle className="h-5 w-5" />
               <span className="font-medium">
-                Congratulations! You have completed the Dementia Values &
-                Priorities Tool.
+                Congratulations! You have completed the Empowered Endings Values
+                & Priorities Tool.
               </span>
             </div>
             <p className="text-sm text-green-600 mt-2">

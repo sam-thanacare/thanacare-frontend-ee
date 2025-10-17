@@ -34,7 +34,7 @@ export default function MemberViewDemo() {
   const [assignments] = useState<Assignment[]>([
     {
       id: '1',
-      documentTitle: 'Dementia Values & Priorities Tool',
+      documentTitle: 'Empowered Endings Values & Priorities Tool',
       status: 'in_progress',
       progress: 65,
       assignedAt: '2024-01-15',
@@ -103,9 +103,12 @@ export default function MemberViewDemo() {
 
       <main className="max-w-4xl mx-auto p-6 space-y-6">
         <div className="text-center space-y-2">
-          <h1 className="text-3xl font-bold">My Dementia Tool Documents</h1>
+          <h1 className="text-3xl font-bold">
+            My Empowered Endings Tool Documents
+          </h1>
           <p className="text-muted-foreground">
-            View and complete your assigned dementia care planning documents
+            View and complete your assigned Empowered Endings care planning
+            documents
           </p>
         </div>
 

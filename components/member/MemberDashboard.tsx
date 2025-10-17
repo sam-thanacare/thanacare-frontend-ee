@@ -335,7 +335,8 @@ export function MemberDashboard() {
                 Welcome back, {user?.name}!
               </h1>
               <p className="text-muted-foreground">
-                Here&apos;s an overview of your dementia care planning journey
+                Here&apos;s an overview of your Empowered Endings care planning
+                journey
               </p>
             </div>
           </div>
@@ -421,8 +422,8 @@ export function MemberDashboard() {
             Recent Document Assignments
           </CardTitle>
           <CardDescription>
-            Your assigned dementia care planning documents and their current
-            status
+            Your assigned Empowered Endings care planning documents and their
+            current status
           </CardDescription>
         </CardHeader>
         <CardContent>
@@ -518,9 +519,9 @@ export function MemberDashboard() {
                   No Documents Assigned
                 </h3>
                 <p className="text-gray-500 mb-4">
-                  You don&apos;t have any dementia tool documents assigned yet.
-                  Your trainer will assign documents when they&apos;re ready for
-                  you to complete.
+                  You don&apos;t have any Empowered Endings tool documents
+                  assigned yet. Your trainer will assign documents when
+                  they&apos;re ready for you to complete.
                 </p>
               </div>
             )}

@@ -65,7 +65,7 @@ const SECTIONS = [
     id: 0,
     title: 'Care Preferences',
     description:
-      'Select your desired care preferences for different stages of dementia',
+      'Select your desired care preferences for different stages of health conditions',
     icon: Heart,
     color: 'text-red-500',
   },
@@ -92,7 +92,7 @@ const SECTIONS = [
   },
 ];
 
-export default function DementiaToolDemo() {
+export default function EmpoweredEndingsToolDemo() {
   const [formData, setFormData] = useState<DementiaFormData>({
     carePreferences: {
       advancedDementiaStage: '',
@@ -338,11 +338,11 @@ export default function DementiaToolDemo() {
         {/* Header */}
         <div className="text-center space-y-2">
           <h1 className="text-3xl font-bold">
-            Dementia Values & Priorities Tool
+            Empowered Endings Values & Priorities Tool
           </h1>
           <p className="text-muted-foreground">
             A comprehensive tool to help communicate your wishes regarding
-            future care if living with dementia
+            future care and end-of-life planning
           </p>
         </div>
 
@@ -350,8 +350,8 @@ export default function DementiaToolDemo() {
         <Alert className="border-blue-200 bg-blue-50 dark:bg-blue-900/20">
           <Play className="h-4 w-4" />
           <AlertDescription>
-            This is a demonstration of the Dementia Values & Priorities Tool.
-            Your responses are not saved in demo mode.
+            This is a demonstration of the Empowered Endings Values & Priorities
+            Tool. Your responses are not saved in demo mode.
             <Link href="/login" className="ml-2 text-blue-600 hover:underline">
               Sign in to save your progress
             </Link>
@@ -477,9 +477,9 @@ export default function DementiaToolDemo() {
                 </h2>
               </div>
               <p className="text-gray-600 dark:text-gray-300 mb-6 max-w-2xl mx-auto">
-                This demo shows you how the Dementia Values & Priorities Tool
-                works. Sign up to create your account and start planning your
-                healthcare wishes.
+                This demo shows you how the Empowered Endings Values &
+                Priorities Tool works. Sign up to create your account and start
+                planning your healthcare wishes.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link href="/login">
